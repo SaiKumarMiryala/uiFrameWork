@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression Suite]" parallel="none">
+  <listeners>
+    <listener class-name="com.uiFramework.companyName.projectName.helper.listener.RetryListener"/>
+  </listeners>
+  <test name="SecondTest(failed)" parallel="none">
+    <classes>
+      <class name="com.uiFramework.B">
+        <methods>
+          <include name="testLoginB"/>
+        </methods>
+      </class> <!-- com.uiFramework.B -->
+    </classes>
+  </test> <!-- SecondTest(failed) -->
+  <test name="ThirdTest(failed)" parallel="none">
+    <classes>
+      <class name="com.uiFramework.C">
+        <methods>
+          <include name="testLoginC"/>
+        </methods>
+      </class> <!-- com.uiFramework.C -->
+    </classes>
+  </test> <!-- ThirdTest(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->
